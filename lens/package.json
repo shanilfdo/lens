@@ -1,5 +1,5 @@
 {
-  "name": "llm-lens",
+  "name": "model-lens",
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
