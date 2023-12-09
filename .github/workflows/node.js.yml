@@ -29,5 +29,5 @@ jobs:
         cache-dependency-path: lens/package-lock.json
     - run: npm ci
       working-directory: ./lens
-    - run: npm run build
+    - run: npm run pack
       working-directory: ./lens
