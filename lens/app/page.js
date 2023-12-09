@@ -1,3 +1,4 @@
+"use client";
 import useSWR from "swr";
 import Link from "next/link";
 import { formatDate } from "../utils/formatDate";
@@ -38,8 +39,8 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>
-          {data.runs.map((run) => (
-            <TableRow run={run} />
+          {data.runs.map((run, i) => (
+            <TableRow key={i} run={run} />
           ))}
         </tbody>
       </table>
