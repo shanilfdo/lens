@@ -25,6 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: lens/package-lock.json
+        registry-url: 'https://registry.npmjs.org'
     - run: npm ci
       working-directory: ./lens
     - run: npm run pack
